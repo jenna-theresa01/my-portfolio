@@ -1,50 +1,47 @@
 import Image from "next/image";
-const Hero = () => {
+import React from "react";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+import { RainbowHighlight } from "./RainbowHighlight";
+
+export default function Hero() {
+  const colors = ["#F59E0B", "#84CC16", "#10B981", "#3B82F6"];
   return (
-    <div className="hero-container">
-      <Image
-        src="/img/hero-image.jpg"
-        className="hero-img"
-        width={300}
-        height={300}
-        alt="hero image"
-      />
-      <div className="hero-text">
-        <h1>Hi, I'm Jenna</h1>
-        <p>
-          I am a full stack software developer based in Kentucky. I graduated
-          from a Software Development Bootcamp in December of 2023. I'm excited
-          to continue sharing my progress in this journey of lifelong learning.
-        </p>
-        <div className="social-icons">
-          <a
-            href="https://twitter.com/olawanle_joel"
-            aria-label="Twitter"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-twitter"></i>
-          </a>
-          <a
-            href="https://github.com/olawanlejoel"
-            aria-label="GitHub"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-github"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/olawanlejoel/"
-            aria-label="LinkedIn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-linkedin"></i>
-          </a>
+    <div className="flex flex-row justify-center items-start overflow-hidden">
+      {/* Text Container */}
+
+      <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
+        <RoughNotationGroup show={true}>
+          <RainbowHighlight color={colors[0]}>
+            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+              Developer.
+            </h1>
+          </RainbowHighlight>
+          <RainbowHighlight color={colors[1]}>
+            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+              Designer.
+            </h1>
+          </RainbowHighlight>
+          <RainbowHighlight color={colors[2]}>
+            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+              Programmer.
+            </h1>
+          </RainbowHighlight>
+          <RainbowHighlight color={colors[3]}>
+            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+              Animal Lover.
+            </h1>
+          </RainbowHighlight>
+        </RoughNotationGroup>
+      </div>
+      {/* Image Container */}
+      <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
+        <div className="w-3/4 ">
+          <img src={"/img/hero-image.jpg"} alt="avatar" className=" shadow" />
+          <div className="flex flex-row justify-between mt-4">
+            <div className="flex flex-row space-x-4"></div>
+          </div>
         </div>
       </div>
     </div>
   );
-};
-
-export default Hero; 
+}

@@ -7,7 +7,7 @@ export default function NavBar() {
   const router = useRouter();
   console.log(router.asPath);
   const { theme, setTheme } = useTheme();
-  const { mounted, setMounted } = useState(false);
+  const [ mounted, setMounted ]  = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -17,7 +17,7 @@ export default function NavBar() {
     <div className="max-w-6xl mx-auto px-4 py-10 md:py-20">
       <div className="flex md:flex-row justify-between items-center">
         {/* Logo / Home / Text */}
-        // Rest of the code
+        {/* Rest of the code */}
         <button
           aria-label="Toggle Dark Mode"
           type="button"
