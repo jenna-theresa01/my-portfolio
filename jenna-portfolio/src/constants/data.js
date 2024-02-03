@@ -66,6 +66,12 @@ const userData = {
         currentProject: "Mind Reader",
         currentProjectURL: "",
     },
+    socialLinks: {
+        twitter: "https://twitter.com/jennamar828",
+        instagram: "https://www.instagram.com/jennamar828/",
+        linkedin: "https://www.linkedin.com/in/jenna-t-martin",
+        github: "https://github.com/jenna-theresa01", 
+    }
 
 };
 
