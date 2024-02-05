@@ -13,6 +13,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
       "I graduated from Awesome Inc Development Bootcamp in December 2023. Looking forward to lifelong learning in this field!",
     image: "/avatar.png",
     type: "website",
+    ...customMeta
   };
   return (
     <div>

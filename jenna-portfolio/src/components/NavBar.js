@@ -15,7 +15,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-10 md:py-20">
+    <div className={`max-w-6xl mx-auto px-4 py-10 md:py-20 ${theme === 'dark' ? 'bg-gray-900' : 'bg-white'}`}>
       <div className="flex md:flex-row justify-between items-center">
         {/* Logo / Home / Text */}
         <div className="flex flex-col">
