@@ -7,52 +7,52 @@ const userData = {
     projects: [
         {
             title: "Mind Reader",
-            link: "",
+            link: "https://github.com/jenna-theresa01/mind-reader-project",
             imgUrl: "",
         },
         {
             title: "Weather App",
-            link: "",
+            link: "https://github.com/jenna-theresa01/weather-app",
             imgUrl: "",
         },
         {
             title: "Tic-Tac-Toe",
-            link: "",
+            link: "https://github.com/jenna-theresa01/tic-tac-toe-project",
             imgUrl: "",
         },
         {
             title: "React Restaurant",
-            link: "",
+            link: "https://github.com/jenna-theresa01/react-restaurant",
             imgUrl: "",
         },
         {
             title: "To-Do List",
-            link: "",
+            link: "https://github.com/jenna-theresa01/to-do-list",
             imgUrl: "",
         },
         {
             title: "Python / EverCraft",
-            link: "",
+            link: "https://github.com/jenna-theresa01/EverCraft-Game",
             imgUrl: "",
         },
         {
             title: "SQL Heroes",
-            link: "",
+            link: "https://github.com/jenna-theresa01/sql-heroes",
             imgUrl: "",
         },
         {
             title: "Backend Bistro",
-            link: "",
+            link: "https://github.com/jenna-theresa01/backend-bistro",
             imgUrl: "",
         },
         {
             title: "Fast.fm",
-            link: "",
+            link: "https://github.com/jenna-theresa01/fast-fm-project",
             imgUrl: "",
         },
         {
             title: "Capstone Project",
-            link: "",
+            link: "https://catch-the-creature-frontend-3vjh-8n6d88uba.vercel.app/",
             imgUrl: "",
         },
     ], 
