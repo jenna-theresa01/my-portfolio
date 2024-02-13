@@ -29,7 +29,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
           rel="canonical"
           href={`https://yourwebsite.com${router.asPath}`}
         />
-        //TODO: need to change these to be specific to me
+        {/* //TODO: need to change these to be specific to me */}
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Manu Arora" />
         <meta property="og:description" content={meta.description} />

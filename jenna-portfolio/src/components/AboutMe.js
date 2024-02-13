@@ -40,8 +40,8 @@ export default function AboutMe() {
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 >
                   email
-                </a>{" "}
-                and I'll get back to you!
+                </a>{$` `}
+                and I will get back to you!
               </p>
             </div>
             {/* Social Links */}
@@ -139,22 +139,21 @@ export default function AboutMe() {
                 alt="react"
                 className="h-20 w-20 mx-4 my-4"
               />
-              <img 
-              src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"
-              alt="python"
-              className="h-20 w-20 mx-4 my-4" 
+              <img
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"
+                alt="python"
+                className="h-20 w-20 mx-4 my-4"
               />
-              <img 
-              src="/img/fastapi-1.svg"
+              <img
+                src="/img/fastapi-1.svg"
                 alt="fastapi"
-              className="h-20 w-20 mx-4 my-4" 
+                className="h-20 w-20 mx-4 my-4"
               />
-              <img 
-              src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tailwind/tailwind.png"
-              alt="tailwind"
-              className="h-20 w-20 mx-4 my-4" 
+              <img
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tailwind/tailwind.png"
+                alt="tailwind"
+                className="h-20 w-20 mx-4 my-4"
               />
-
             </div>
           </div>
         </div>

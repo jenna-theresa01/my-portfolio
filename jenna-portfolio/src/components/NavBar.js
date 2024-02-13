@@ -8,18 +8,18 @@ export default function NavBar() {
   const router = useRouter();
   console.log(router.asPath);
   const { theme, setTheme } = useTheme();
-  const [ mounted, setMounted ]  = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   return (
-    <div className={`max-w-6xl mx-auto px-4 py-10 md:py-20 ${theme === 'dark' ? 'bg-gray-900' : 'bg-white'}`}>
+    <div className="max-w-6xl mx-auto px-4 py-10 md:py-20">
       <div className="flex md:flex-row justify-between items-center">
         {/* Logo / Home / Text */}
         <div className="flex flex-col">
-          <Link href='/'>
+          <Link href="/">
             <h1 className="font-semibold text-xl dark:text-gray-100">
               {userData.name}
             </h1>
@@ -208,10 +208,6 @@ export default function NavBar() {
           </button>
         </div>
       </div>
-        {/* Rest of the code */}
-        
-      </div>
-    // Rest of code??
-
+    </div>
   );
 }
