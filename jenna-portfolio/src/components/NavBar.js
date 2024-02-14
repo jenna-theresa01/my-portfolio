@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
-import userData from "@/constants/data";
+import userData from "src/constants/data";
 
 export default function NavBar() {
   const router = useRouter();

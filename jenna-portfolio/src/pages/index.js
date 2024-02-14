@@ -1,10 +1,10 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import ContainerBlock from "@/components/ContainerBlock";
+import ContainerBlock from "src/components/ContainerBlock";
 // import Projects from "@/components/Projects";
 // import LatestCode from "@/components/LatestCode";
-import Hero from "@/components/Hero";
-import userData from "@/constants/data";
+import Hero from "src/components/Hero";
+import userData from "src/constants/data";
 
 export default function Home({ repositories }) {
   return (

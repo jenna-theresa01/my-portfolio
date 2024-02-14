@@ -1,5 +1,6 @@
 import React from "react";
-import userData from "@/constants/data";
+import userData from "src/constants/data";
+import Image from "next/image";
 
 export default function AboutMe() {
   return (
@@ -114,45 +115,61 @@ export default function AboutMe() {
               Tech Stack
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
                 alt="javascript"
                 className="h-20 w-20 mx-4 my-4"
+                height={100}
+                width={100}
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
                 alt="html"
                 className="h-20 w-20 mx-4 my-4"
+                height={100}
+                width={100}
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
                 alt="css"
                 className="h-20 w-20 mx-4 my-4"
+                height={100}
+                width={100}
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
                 alt="git"
                 className="h-20 w-20 mx-4 my-4"
+                height={100}
+                width={100}
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
                 alt="react"
                 className="h-20 w-20 mx-4 my-4"
+                height={100}
+                width={100}
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"
                 alt="python"
                 className="h-20 w-20 mx-4 my-4"
+                height={100}
+                width={100}
               />
-              <img
+              <Image
                 src="/img/fastapi-1.svg"
                 alt="fastapi"
                 className="h-20 w-20 mx-4 my-4"
+                height={100}
+                width={100}
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tailwind/tailwind.png"
                 alt="tailwind"
                 className="h-20 w-20 mx-4 my-4"
+                height={100}
+                width={100}
               />
             </div>
           </div>

@@ -36,7 +36,13 @@ export default function Hero() {
       {/* Image Container */}
       <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
         <div className="w-3/4 ">
-          <img src={"/img/hero-image.jpg"} alt="avatar" className=" shadow" />
+          <Image
+            src={"/img/hero-image.jpg"}
+            alt="avatar"
+            className=" shadow"
+            height={100}
+            width={100}
+          />
           <div className="flex flex-row justify-between mt-4">
             <div className="flex flex-row space-x-4"></div>
           </div>
