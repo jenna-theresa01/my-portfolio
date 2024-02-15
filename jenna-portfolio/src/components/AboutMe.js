@@ -36,12 +36,15 @@ export default function AboutMe() {
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 For any questions, shoot an{" "}
-                <a
-                  href={`mailto:${userData.email}`}
+                <button
+                  onClick={() =>
+                    (window.location.href = `mailto:${userData.email}`)
+                  }
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 >
-                  email
-                </a>{$` `}
+                  Email
+                </button>
+                {$` `}
                 and I will get back to you!
               </p>
             </div>
