@@ -8,52 +8,52 @@ const userData = {
         {
             title: "Mind Reader",
             link: "https://github.com/jenna-theresa01/mind-reader-project",
-            imgUrl: "",
+            imgUrl: "/img/mind-reader.jpeg",
         },
         {
             title: "Weather App",
             link: "https://github.com/jenna-theresa01/weather-app",
-            imgUrl: "",
+            imgUrl: "/img/weather-app.jpeg",
         },
         {
             title: "Tic-Tac-Toe",
             link: "https://github.com/jenna-theresa01/tic-tac-toe-project",
-            imgUrl: "",
+            imgUrl: "/img/tic-tac-toe.png",
         },
         {
             title: "React Restaurant",
             link: "https://github.com/jenna-theresa01/react-restaurant",
-            imgUrl: "",
+            imgUrl: "/img/react-restaurant.jpeg",
         },
         {
             title: "To-Do List",
             link: "https://github.com/jenna-theresa01/to-do-list",
-            imgUrl: "",
+            imgUrl: "/img/to-do-list.jpeg",
         },
         {
             title: "Python / EverCraft",
             link: "https://github.com/jenna-theresa01/EverCraft-Game",
-            imgUrl: "",
+            imgUrl: "/img/evercraft.png",
         },
         {
             title: "SQL Heroes",
             link: "https://github.com/jenna-theresa01/sql-heroes",
-            imgUrl: "",
+            imgUrl: "/img/sql-hero.jpeg",
         },
         {
             title: "Backend Bistro",
             link: "https://github.com/jenna-theresa01/backend-bistro",
-            imgUrl: "",
+            imgUrl: "/img/backend-bistro.jpeg",
         },
         {
             title: "Fast.fm",
             link: "https://github.com/jenna-theresa01/fast-fm-project",
-            imgUrl: "",
+            imgUrl: "/img/fast.fm.png",
         },
         {
             title: "Capstone Project",
             link: "https://catch-the-creature-frontend-3vjh-8n6d88uba.vercel.app/",
-            imgUrl: "",
+            imgUrl: "/img/catch-the-creatures.png",
         },
     ], 
     about: {

@@ -35,7 +35,7 @@ export default function Hero() {
         </RoughNotationGroup>
       </div>
       {/* Image Container */}
-      <div className="hidden lg:block absolute inset-0 z-0">
+      <div className="hidden lg:block absolute inset-0 ">
         <div className="w-full h-full ">
           <Image
             src={"/img/hero-image.jpg"}
