@@ -20,10 +20,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Script
+      {/* <Script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         strategy="beforeInteractive"
-      />
+      /> */}
       <ThemeProvider defaultTheme="light" attribute="class">
         <Component {...pageProps} />
       </ThemeProvider>
