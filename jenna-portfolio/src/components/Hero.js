@@ -35,18 +35,17 @@ export default function Hero() {
         </RoughNotationGroup>
       </div>
       {/* Image Container */}
-      <div className="hidden lg:block absolute inset-0 ">
-        <div className="w-full h-full ">
+      <div className="w-full lg:w-1/2 p-4 h-full">
+        <div className="relative h-full">
           <Image
             src={"/img/hero-image.jpg"}
             alt="hero-image"
-            layout="fill"
-            objectFit="cover"
+            layout="responsive" // Change layout to "responsive"
+            objectFit="cover" // Leave objectFit as "cover" if it suits your design
+            height={500}
+            width={500}
             className="shadow"
           />
-          {/* <div className="flex flex-row justify-between mt-4">
-            <div className="flex flex-row space-x-4"></div>
-          </div> */}
         </div>
       </div>
     </div>
