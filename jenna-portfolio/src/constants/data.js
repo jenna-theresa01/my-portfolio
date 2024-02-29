@@ -52,7 +52,7 @@ const userData = {
         },
         {
             title: "Capstone Project",
-            link: "https://catch-the-creature-frontend-3vjh-8n6d88uba.vercel.app/",
+            link: "https://catch-the-creature-frontend-3vjh.vercel.app/",
             imgUrl: "/img/catch-the-creatures.png",
         },
     ], 
