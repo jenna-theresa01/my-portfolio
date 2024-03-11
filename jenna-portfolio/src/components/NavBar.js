@@ -9,10 +9,19 @@ export default function NavBar() {
   console.log(router.asPath);
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 md:py-20">
@@ -23,18 +32,20 @@ export default function NavBar() {
             <h1 className="font-semibold text-xl dark:text-gray-100">
               {userData.name}
             </h1>
-            <p className="text-base font-light text-gray-500 dark:text-gray-300">
+            <p className="text-base font-light dark:text-gray-300">
               {userData.designation}
             </p>
           </Link>
         </div>
+
+        {/* Desktop Menu */}
         <div className="space-x-8 hidden md:block">
           <Link
             href="/about"
             className={`text-base  ${
               router.asPath === "/about"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "font-bold dark:text-gray-400"
+                : "dark:text-gray-300 font-normal "
             }`}
           >
             About{" "}
@@ -58,8 +69,8 @@ export default function NavBar() {
             href="/projects"
             className={`text-base  ${
               router.asPath === "/projects"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "font-bold dark:text-gray-400"
+                : "dark:text-gray-300 font-normal "
             }`}
           >
             Projects
@@ -83,8 +94,8 @@ export default function NavBar() {
             href="/experience"
             className={`text-base  ${
               router.asPath === "/experience"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "font-bold dark:text-gray-400"
+                : "dark:text-gray-300 font-normal "
             }`}
           >
             Experience{" "}
@@ -108,8 +119,8 @@ export default function NavBar() {
             href="/contact"
             className={`text-base  ${
               router.asPath === "/contact"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "font-bold dark:text-gray-400"
+                : "dark:text-gray-300 font-normal "
             }`}
           >
             Contact
@@ -146,7 +157,7 @@ export default function NavBar() {
           </a>
           <a
             href={userData.socialLinks.twitter}
-            className="text-base font-normal text-gray-600 dark:text-gray-300"
+            className="text-base font-normal dark:text-gray-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +172,7 @@ export default function NavBar() {
           </a>
           <a
             href={userData.socialLinks.linkedin}
-            className="text-base font-normal text-gray-600 dark:text-gray-300"
+            className="text-base font-normal dark:text-gray-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -207,6 +218,41 @@ export default function NavBar() {
             )}
           </button> */}
         </div>
+
+        {/* Mobile Hamburger Menu */}
+        <div className="md:hidden cursor-pointer" onClick={toggleMobileMenu}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </div>
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="fixed inset-0 z-50 bg-black bg-opacity-75">
+            <div className="flex justify-end p-4">
+              <button onClick={closeMobileMenu} className="text-white">
+                ✕
+              </button>
+            </div>
+            <div className="flex flex-col items-center text-white space-y-4">
+              <Link href="/about">About</Link>
+              <Link href="/projects">Projects</Link>
+              <Link href="/experience">Experience</Link>
+              <Link href="/contact">Contact</Link>
+              {/* Add other menu items here */}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
