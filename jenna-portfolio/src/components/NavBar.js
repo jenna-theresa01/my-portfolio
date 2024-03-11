@@ -9,10 +9,19 @@ export default function NavBar() {
   console.log(router.asPath);
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 md:py-20">
@@ -28,6 +37,8 @@ export default function NavBar() {
             </p>
           </Link>
         </div>
+
+        {/* Desktop Menu */}
         <div className="space-x-8 hidden md:block">
           <Link
             href="/about"
@@ -207,6 +218,41 @@ export default function NavBar() {
             )}
           </button> */}
         </div>
+
+        {/* Mobile Hamburger Menu */}
+        <div className="md:hidden cursor-pointer" onClick={toggleMobileMenu}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </div>
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="fixed inset-0 z-50 bg-black bg-opacity-75">
+            <div className="flex justify-end p-4">
+              <button onClick={closeMobileMenu} className="text-white">
+                ✕
+              </button>
+            </div>
+            <div className="flex flex-col items-center text-white space-y-4">
+              <Link href="/about">About</Link>
+              <Link href="/projects">Projects</Link>
+              <Link href="/experience">Experience</Link>
+              <Link href="/contact">Contact</Link>
+              {/* Add other menu items here */}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
