@@ -32,7 +32,7 @@ export default function NavBar() {
             <h1 className="font-semibold text-xl dark:text-gray-100">
               {userData.name}
             </h1>
-            <p className="text-base font-light text-gray-500 dark:text-gray-300">
+            <p className="text-base font-light dark:text-gray-300">
               {userData.designation}
             </p>
           </Link>
@@ -44,8 +44,8 @@ export default function NavBar() {
             href="/about"
             className={`text-base  ${
               router.asPath === "/about"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "font-bold dark:text-gray-400"
+                : "dark:text-gray-300 font-normal "
             }`}
           >
             About{" "}
@@ -69,8 +69,8 @@ export default function NavBar() {
             href="/projects"
             className={`text-base  ${
               router.asPath === "/projects"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "font-bold dark:text-gray-400"
+                : "dark:text-gray-300 font-normal "
             }`}
           >
             Projects
@@ -94,8 +94,8 @@ export default function NavBar() {
             href="/experience"
             className={`text-base  ${
               router.asPath === "/experience"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "font-bold dark:text-gray-400"
+                : "dark:text-gray-300 font-normal "
             }`}
           >
             Experience{" "}
@@ -119,8 +119,8 @@ export default function NavBar() {
             href="/contact"
             className={`text-base  ${
               router.asPath === "/contact"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "font-bold dark:text-gray-400"
+                : "dark:text-gray-300 font-normal "
             }`}
           >
             Contact
@@ -157,7 +157,7 @@ export default function NavBar() {
           </a>
           <a
             href={userData.socialLinks.twitter}
-            className="text-base font-normal text-gray-600 dark:text-gray-300"
+            className="text-base font-normal dark:text-gray-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +172,7 @@ export default function NavBar() {
           </a>
           <a
             href={userData.socialLinks.linkedin}
-            className="text-base font-normal text-gray-600 dark:text-gray-300"
+            className="text-base font-normal dark:text-gray-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
